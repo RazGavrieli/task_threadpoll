@@ -2,13 +2,13 @@
 all: coder task stdinExample
 
 coder: codec.h stdin_main.c
-	gcc stdin_main.c -L. -l Codec -o coder
+	gcc stdin_main.c -pthread -L. -l Codec -o coder
 
 task: codec.h stdin_main.c
-	gcc stdin_main.c -L. -l Codec -o encoder
+	gcc stdin_main.c -pthread -L. -l Codec -o encoder
 
 stdinExample: codec.h stdin_main.c
-	gcc stdin_main.c -L. -l Codec -o tester
+	gcc stdin_main.c -pthread -L. -l Codec -o tester
 
 .PHONY: clean
 clean:

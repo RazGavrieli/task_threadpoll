@@ -1,4 +1,5 @@
 # bash script that runs test.bash 1000 times and check if there is a difference in files/file.txt and files/file3.txt
+export LD_LIBRARY_PATH=/libCodec.so:$LD_LIBRARY_PATH
 make
 mkdir files
 for i in {1..100}
