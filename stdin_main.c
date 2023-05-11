@@ -9,23 +9,23 @@
 #define MAX_ENCRYPTED_SIZE 1024
 #define SIZE_OF_TASK_QUEUE 16
 
-void encrypt(char *s,int key) {
-	int i;
-	for (i = 0; i < strlen(s); i++)
-	{
-		s[i] = s[i] + key;
-	}
-	// sleep(1);
-}
+// void encrypt(char *s,int key) {
+// 	int i;
+// 	for (i = 0; i < strlen(s); i++)
+// 	{
+// 		s[i] = s[i] + key;
+// 	}
+// 	// sleep(1);
+// }
 
-void decrypt(char *s,int key) {
-	int i;
-	for (i = 0; i < strlen(s); i++)
-	{
-		s[i] = s[i] - key;
-	}
-	// sleep(1);
-}
+// void decrypt(char *s,int key) {
+// 	int i;
+// 	for (i = 0; i < strlen(s); i++)
+// 	{
+// 		s[i] = s[i] - key;
+// 	}
+// 	// sleep(1);
+// }
 
 char* decrypt_copy(char *s,int key) {
 	char *copy = malloc(sizeof(char) * strlen(s));
