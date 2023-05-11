@@ -12,4 +12,4 @@ stdinExample: codec.h stdin_main.c
 
 .PHONY: clean
 clean:
-	-rm encoder tester 2>/dev/null
+	-rm coder encoder tester 2>/dev/null
